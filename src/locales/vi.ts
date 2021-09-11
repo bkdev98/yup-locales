@@ -7,7 +7,7 @@ import { LocaleObject, FormatErrorParams } from 'yup';
 export const mixed: LocaleObject['mixed'] = {
   default: '${path} không hợp lệ.',
   required: '${path} là một trường bắt buộc',
-  oneOf: '${path} Phải là một trong các giá trị sau: ${values}',
+  oneOf: '${path} phải là một trong các giá trị sau: ${values}',
   notOneOf: '${path} không được là một trong những giá trị sau: ${values}',
   notType: ({ path, type, value, originalValue }: FormatErrorParams) => {
     const isCast = originalValue != null && originalValue !== value;
@@ -30,14 +30,14 @@ export const mixed: LocaleObject['mixed'] = {
 
 export const string: LocaleObject['string'] = {
   length: '${path} phải chính xác ${length} ký tự',
-  min: '${path} Phải có ít nhất ${min} ký tự',
-  max: '${path} Phải có nhiều nhất là ${max}',
-  matches: '${path} Phải khớp với những điều sau đây: "${regex}"',
-  email: '${path} Phải là một email hợp lệ',
-  url: '${path} Phải là một URL hợp lệ',
-  trim: '${path} Phải là một chuỗi được cắt tỉa',
-  lowercase: '${path} Phải là một chuỗi chữ thường',
-  uppercase: '${path} Phải là một chuỗi chữ hoa',
+  min: '${path} phải có ít nhất ${min} ký tự',
+  max: '${path} phải có nhiều nhất là ${max}',
+  matches: '${path} phải khớp với những điều sau đây: "${regex}"',
+  email: '${path} phải là một email hợp lệ',
+  url: '${path} phải là một URL hợp lệ',
+  trim: '${path} phải là một chuỗi được cắt tỉa',
+  lowercase: '${path} phải là một chuỗi chữ thường',
+  uppercase: '${path} phải là một chuỗi chữ hoa',
 };
 
 export const number: LocaleObject['number'] = {
